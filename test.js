@@ -5,6 +5,8 @@ var webdriver = require('selenium-webdriver'),
 var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
+
+    
 driver.get('http://localhost:8080/DB/');
 for (var i = 0; i <10; i++) {
   driver.findElement(By.name('id')).sendKeys(6006+i);
